@@ -161,7 +161,6 @@
                 "Uzinfocom haqida aytib ber ?"
             ],
             "responses": "Raqamlashtirishning eng muhim asosiy jihatlaridan biri ma’lumotlarni qayta ishlash, boshqarish va saqlash uchun kuchli bazani yaratishdir. Shu maqsadda Yagona integrator UZINFOCOM tuzildi, uning vazifalariga davlat axborot tizimlarini yaratish va qo‘llab-quvvatlash kiradi. Bugungi kunda UZINFOCOM zamonaviy texnologiyalar va yechimlardan foydalangan holda davlat va xususiy sektorni raqamlashtirish bo‘yicha keng ko‘lamli loyihalarni amalga oshiruvchi AKT sohasining asosiy korxonasi hisoblanadi.",
-            "context_set": "",
             "context_set": ""
         },
         {
@@ -185,7 +184,7 @@
             "tag": 68,
             "patterns": [
                 "O'zbekiston qachon mustaqillikka erishdi ?",
-                "O‘zbekiston qachon mustaqil bo'lgan ?"
+                "O'zbekiston qachon mustaqil bo'lgan ?"
             ],
             "responses": "O‘zbekiston 1991-yilda Sovet Ittifoqi parchalanganidan keyin mustaqil respublika bo‘ldi.",
             "context_set": ""
