@@ -10,7 +10,7 @@ from tensorflow import keras
 bot = telebot.TeleBot("6133521715:AAHy9pq179oFYuPg2izr-ky2ig5xDu30pbM")
 
 model = keras.models.load_model('content/chat_model')
-with open("combined_intents.json") as file:
+with open("intents_v2.json") as file:
     datasss = json.load(file)
 # load tokenizer object
 with open('tokenizer.pickle', 'rb') as handle:
@@ -87,7 +87,7 @@ def chat(message):
     confidence = np.max(res)
     random_response = np.random.choice(fallback_responses)
     print("o'xshashlik: ", confidence)
-    if confidence < 0.6:  # Threshold ustanish
+    if confidence < 0.5:  # Threshold ustanish
         api = MuxlisaApi(text=random_response)
         response = random_response
     else:
@@ -119,7 +119,7 @@ def chat_text(message):
     confidence = np.max(res)
     random_response = np.random.choice(fallback_responses)
     print("o'xshashlik: ", confidence)
-    if confidence < 0.6:  # Threshold ustanish
+    if confidence < 0.5:  # Threshold ustanish
         api = MuxlisaApi(text=random_response)
         response = random_response
     else:
