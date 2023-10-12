@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import json
 import io
-import stt
+# import stt
 from playsound import playsound
 from pydub import AudioSegment
 
@@ -27,18 +27,29 @@ def chat():
 
     # parameters
     max_len = 20
-
+    fallback_responses = ["Kechirasiz, savolingizni tushunaolmadim.", "Kechirasiz, Savolingizni qaytara olasizmi?"]
     while True:
         print("User: ", end="")
-        # inp = input()
-        inp = stt.listen()
-        print(inp)
+        inp = input()
+        # inp = stt.listen()
+        # print(inp)
         if inp.lower() == "quit":
             break
 
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
                                                                           truncating='post', maxlen=max_len))
+
+        confidence = np.max(result)
+        print(confidence)
+        if confidence < 0.6:  # Threshold ustanish
+            random_response = np.random.choice(fallback_responses)
+            print("ChatBot:", random_response)
+            speak(random_response)
+            continue
+
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
+
+        print("tag", tag)
 
         for i in data['intents']:
             if i['tag'] == tag:
