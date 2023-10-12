@@ -1,0 +1,11 @@
+/old_data/
+/templates/
+/venv/
+/voices/
+/UI.py
+/.idea/
+/__pycache__/
+
+/voice.wav
+/content/
+/chat_model.zip

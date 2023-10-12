@@ -5,6 +5,7 @@ import requests
 
 
 def listen():
+    print("Speak now...")
     # Sampling frequency
     freq = 16000
 

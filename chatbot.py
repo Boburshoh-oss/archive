@@ -1,15 +1,21 @@
 import pickle
 import numpy as np
 import json
+import io
+import stt
+from playsound import playsound
+from pydub import AudioSegment
+
+import requests
 from tensorflow import keras
 
-with open("intents_converted_original.json") as file:
+with open("combined_intents.json") as file:
     data = json.load(file)
 
 
 def chat():
     # load trained model
-    model = keras.models.load_model('chat_model')
+    model = keras.models.load_model('content/chat_model')
 
     # load tokenizer object
     with open('tokenizer.pickle', 'rb') as handle:
@@ -23,20 +29,43 @@ def chat():
     max_len = 20
 
     while True:
-        print("User: " ,end="")
-        inp = input()
+        print("User: ", end="")
+        # inp = input()
+        inp = stt.listen()
+        print(inp)
         if inp.lower() == "quit":
             break
 
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
-                                             truncating='post', maxlen=max_len))
+                                                                          truncating='post', maxlen=max_len))
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
 
         for i in data['intents']:
             if i['tag'] == tag:
-                print("ChatBot:" , np.random.choice(i['responses']))
+                print("ChatBot:", i['responses'])
+                speak(i['responses'])
+
 
 print("Start messaging with the Chatbot (type quit to stop)!")
+
+url = "https://api.muxlisa.uz/v1/api/services/tts/"
+
+
+def speak(text):
+    url = "https://api.muxlisa.uz/v1/api/services/tts/"
+
+    payload = {"text": text, "token": "vhRe6NFj9CJwpkW_U07dEQ"}
+    files = []
+    headers = {}
+
+    response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+    if response.status_code == 200:
+        with open("./../response_audio.ogg", "wb") as audio_file:
+            audio_file.write(response.content)
+
+    playsound("./../response_audio.ogg")
+
 
 # call the function to start chat
 chat()
