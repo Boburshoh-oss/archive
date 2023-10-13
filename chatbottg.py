@@ -87,7 +87,7 @@ def chat(message):
     confidence = np.max(res)
     random_response = np.random.choice(fallback_responses)
     print("o'xshashlik: ", confidence)
-    if confidence < 0.5:  # Threshold ustanish
+    if confidence < 0.6:  # Threshold ustanish
         api = MuxlisaApi(text=random_response)
         response = random_response
     else:
@@ -119,15 +119,18 @@ def chat_text(message):
     confidence = np.max(res)
     random_response = np.random.choice(fallback_responses)
     print("o'xshashlik: ", confidence)
-    if confidence < 0.5:  # Threshold ustanish
+    if confidence < 0.6:  # Threshold ustanish
         api = MuxlisaApi(text=random_response)
         response = random_response
     else:
         tag = lbl_encoder.inverse_transform([np.argmax(res)])
         for i in datasss['intents']:
             if i['tag'] == tag:
+                print(i["responses"])
                 api = MuxlisaApi(text=i['responses'])
                 response = i['responses']
+                print(f"response>> {response}\n"
+                      f"response type>> {type(response)}")
     res = api.tts(speaker_id=0)
     audio = res
     file_name = "tts_audio.ogg"
