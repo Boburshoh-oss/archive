@@ -1,422 +1,467 @@
 {
-    "intents": [
-        {
-            "tag": 1,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi to'g'risida aytib ber ?",
-                "Raqamli texnologiyalar vazirligi to'g'risida ?",
-                "Raqamli texnologiyalar vazirligi to'g'risida nimani bilasan ?",
-                "Raqamli texnologiyalar vazirligi bu nima ?",
-                "Raqamli texnologiyalar vazirligi bu ?",
-                "Raqamli texnologiyalar vazirligi haqida ?",
-                "Raqamli texnologiyalar vazirligi haqida aytib ber ?",
-                "Raqamli texnologiyalar vazirligi haqida aytib ber ?",
-                "Raqamli texnologiyalar vazirligi haqida ?",
-                "Raqamli texnologiyalar vazirligi bu ?",
-                "Raqamli texnologiyalar vazirligi bu nima ?",
-                "Raqamli texnologiyalar vazirligi to'g'risida nimani bilasan ?",
-                "Raqamli texnologiyalar vazirligi to'g'risida ?",
-                "Raqamli texnologiyalar vazirligi to'g'risida aytib ber ?"
-            ],
-            "responses": "O‘zbekiston Respublikasi Prezidentining “Yangi O‘zbekiston ma’muriy islohotlarini amalga oshirish chora-tadbirlari to‘g‘risida” gi 2022-yil 24-dekabrdagi PF-269-son Farmoni bilan Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish vazirligi negizida Raqamli texnologiyalar vazirligi tashkil etilgan.",
-            "context_set": ""
-        },
-        {
-            "tag": 8,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi faoliyati ?"
-            ],
-            "responses": "Axborot texnologiyalari va kommunikatsiyalar sohasida, “elektron hukumat”ni joriy etishda yagona davlat siyosati amalga oshirilishini ta’minlash, axborot texnologiyalarini rivojlantirishning jahon darajasidan kelib chiqqan holda milliy axborot-kommunikatsiya tizimini tatbiq etish va rivojlantirish yuzasidan kompleks dasturlarni ishlab chiqish va amalga oshirish",
-            "context_set": ""
-        },
-        {
-            "tag": 9,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi nima ish bilan shug'ullanadi ?"
-            ],
-            "responses": "Telekommunikatsiya infratuzilmasini yanada rivojlantirish va modernizatsiya qilish, shu jumladan, Internet tarmog‘iga keng polosali ulanishni kengaytirish, telefon aloqasi, televideniye va radioeshittirishning raqamli tizimlariga to‘liq o‘tishni ta’minlash, aloqa va telekommunikatsiyalar sohasidagi faoliyatni, shuningdek, radiochastotali spektrdan foydalanishni davlat yo‘li bilan boshqarish, litsenziyalash va nazorat qilish borasidagi funksiyalarni amalga oshirish;",
-            "context_set": ""
-        },
-        {
-            "tag": 10,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi nima bilan shug'ullanadi ?"
-            ],
-            "responses": "Elektron hukumatni tatbiq etish, vazirliklar, idoralar, kompaniyalar va uyushmalarning, mahalliy davlat hokimiyati organlarining axborotlashtirish va interaktiv davlat xizmatlarini takomillashtirish borasidagi faoliyatini idoralararo muvofiqlashtirish, monitoring qilish, baholash va nazorat qilish bo‘yicha davlat dasturlarining amalga oshirilishini ta’minlash, shuningdek, davlat axborot resurslari hamda ma’lumot bazalarini shakllantirish, saqlash va foydalanishning yagona tizimini vujudga keltirish, idoralararo axborot tizimlarini yaratish va boshqarish;",
-            "context_set": ""
-        },
-        {
-            "tag": 11,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi nima bilan shug'ullanadilar ?"
-            ],
-            "responses": "Internet tarmog‘ining milliy segmenti yanada shakllantirilishini ta’minlash, mamlakatimizning turli yo‘nalishlardagi zamonaviy veb-resurslarini, shu jumladan, aholining, xususan, yosh avlodning axborotga bo‘lgan va intellektual talab-ehtiyojlarini qondirish maqsadida tarmoq resurslarini rivojlantirish uchun zarur texnik va qulay shart-sharoitlarni yaratish;",
-            "context_set": ""
-        },
-        {
-            "tag": 12,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi asosiy vazifalari ?",
-                "Raqamli texnologiyalar vazirligi vazifalari ?"
-            ],
-            "responses": "Raqobatdosh dasturiy mahsulotlarning mamlakatimizda ishlab chiqarilishini va ichki bozorini hamda ularga ko‘rsatiladigan xizmatlarni rivojlantirishga ko‘maklashish va uning muvofiqlashtirilishini ta’minlash, iqtisodiyotning real sektori tarmoqlarida va iste’molchilarda zamonaviy dasturiy mahsulotlar, axborot tizimlari va axborot resurslarini joriy etish;",
-            "context_set": ""
-        },
-        {
-            "tag": 13,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi asosiy vazifasi ?",
-                "Raqamli texnologiyalar vazirligi vazifasi ?"
-            ],
-            "responses": "Axborot xavfsizligini ta’minlash va kommunikatsiya tarmoqlari, dasturiy mahsulotlar, axborot tizimlari va resurslarini himoya qilishning zamonaviy texnologiyalarini tatbiq etish chora-tadbirlarini amalga oshirish, axborot resurslarini himoya qilish bo‘yicha texnik infratuzilmani yanada rivojlantirish;",
-            "context_set": ""
-        },
-        {
-            "tag": 14,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi asosiy yo'nalishlari ?",
-                "Raqamli texnologiyalar vazirligi yo'nalishlari ?"
-            ],
-            "responses": "Zamonaviy kommunikatsiya vositalari sohasida ilmiy tadqiqotlar va ishlanmalarni, kadrlarni tayyorlash, qayta tayyorlash va malakasini oshirishni tashkil qilish, dasturiy mahsulotlar, axborot tizimlari va ma’lumotlar bazalarini ishlab chiqish va tatbiq etish, axborot xavfsizligini ta’minlash va axborot-kommunikatsiya texnologiyalarining boshqa sohalarida shunday ishlarni tashkil etish;",
-            "context_set": ""
-        },
-        {
-            "tag": 15,
-            "patterns": [
-                "Raqamli texnologiyalar vazirligi asosiy yo'nalishi ?",
-                "Raqamli texnologiyalar vazirligi yo'nalishi ?"
-            ],
-            "responses": "Aloqa, axborot texnologiyalari va kommunikatsiyalar sohasida xalqaro hamkorlikni yo‘lga qo‘yish, ustuvor loyihalarni amalga oshirish, radiochastotalik spektrdan samarali foydalanish uchun hamda vazirlik faoliyati doirasiga kiruvchi boshqa yo‘nalishlar bo‘yicha xorijiy investitsiyalarni jalb etish.",
-            "context_set": ""
-        },
-        {
-            "tag": 39,
-            "patterns": [
-                "O'zbekiston haqida aytib ber ?",
-                "O'zbekiston haqida ?",
-                "O'zbekiston bu ?",
-                "O'zbekiston to'g'risida ?",
-                "O'zbekiston to'g'risida aytib ber ?",
-                "O'zbekiston ?",
-                "O'zbekiston to'g'risida nimani bilasan ?"
-            ],
-            "responses": "Oʻzbekiston Markaziy Osiyodagi davlat boʻlib, boshqa beshta davlat oʻrtasida joylashgan: shimolda Qozogʻiston, janubda Turkmaniston, sharqda Tojikiston, shimoli-sharqda Qirgʻiziston va janubda Afgʻoniston. Oʻzbekiston poytaxti — Toshkent shahri.",
-            "context_set": ""
-        },
-        {
-            "tag": 45,
-            "patterns": [
-                "Uzinfocom ?",
-                "uzun fakon",
-                "U zunfa kon",
-                "u zunfa kon"
-            ],
-            "responses": "UZINFOCOM zamonaviy texnologiyalar va yechimlardan foydalangan holda davlat va xususiy sektorni raqamlashtirish bo‘yicha keng ko‘lamli loyihalarni amalga oshiruvchi AKT sohasining asosiy korxonasi hisoblanadi.",
-            "context_set": ""
-        },
-        {
-            "tag": 46,
-            "patterns": [
-                "Sun'iy intellekt ?",
-                "Sun'iy intellekt to'g'risida nimani bilasan ?",
-                "Sun'iy intellekt to'g'risida aytib ber ?",
-                "Sun'iy intellekt bu nima ?"
-            ],
-            "responses": "Sun'iy intellekt - bu kompyuter fanining bo'limi bo'lib, u odatda inson aqlini talab qiladigan vazifalarni bajarishga qodir dastur va tizimlarni yaratish bilan shug'ullanadi. Sun'iy intellekt o'ylashi, o'rganishi, qaror qabul qilishi va odamlar bajaradigan vazifalarga o'xshash vazifalarni bajarishi mumkin bo'lgan kompyuter tizimlarini yaratishga intiladi.",
-            "context_set": ""
-        },
-        {
-            "tag": 47,
-            "patterns": [
-                "Ma'yayti",
-                "mayayti",
-                "mayayiti",
-                "maydiy",
-                "mayaydi",
-                "mayaichi",
-                "MyID ?",
-                "MyID haqida aytib ber ?",
-                "MyID haqida ?",
-                "MyID bu ?",
-                "MyID bu nima ?",
-                "MyID to'g'risida nimani bilasan ?",
-                "MyID to'g'risida ?",
-                "MyID to'g'risida aytib ber ?",
+  "intents": [
+    {
+      "tag": 1,
+      "patterns": [
+        "Raqamli texnologiyalar vazirligi to'g'risida aytib ber ?",
+        "Raqamli texnologiyalar vazirligi to'g'risida ?",
+        "Raqamli texnologiyalar vazirligi to'g'risida nimani bilasan ?",
+        "Raqamli texnologiyalar vazirligi bu nima ?",
+        "Raqamli texnologiyalar vazirligi bu ?",
+        "Raqamli texnologiyalar vazirligi haqida ?",
+        "Raqamli texnologiyalar vazirligi haqida aytib ber ?",
+        "Raqamli texnologiyalar vazirligi bu nima ?",
+        "Raqamli texnologiyalar vazirligi to'g'risida nimani bilasan ?",
+        "Raqamli texnologiyalar vazirligi to'g'risida ?",
+        "Raqamli texnologiyalar vazirligi to'g'risida aytib ber ?"
+      ],
+      "responses": "O‘zbekiston Respublikasi Prezidentining “Yangi O‘zbekiston ma’muriy islohotlarini amalga oshirish chora-tadbirlari to‘g‘risida” gi 2022-yil 24-dekabrdagi PF-269-son Farmoni bilan Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish vazirligi negizida Raqamli texnologiyalar vazirligi tashkil etilgan.",
+      "context_set": ""
+    },
+    {
+      "tag": 2,
+      "patterns": [
+        "Raqamli texnologiyalar vazirligi faoliyati ?",
+        "Raqamli texnologiyalar vazirligi faoliyatiga nimalar kiradi ?",
+        "Texnologiyalar vazirligi faoliyati bo‘yicha ma'lumot ber ?",
+        "Raqamli texnologiyalar vazirligi faoliyati bo‘yicha ma'lumot ber ?"
+      ],
+      "responses": "Axborot texnologiyalari va kommunikatsiyalar sohasida, “elektron hukumat”ni joriy etishda yagona davlat siyosati amalga oshirilishini ta’minlash, axborot texnologiyalarini rivojlantirishning jahon darajasidan kelib chiqqan holda milliy axborot-kommunikatsiya tizimini tatbiq etish va rivojlantirish yuzasidan kompleks dasturlarni ishlab chiqish va amalga oshirish.",
+      "context_set": ""
+    },
+    {
+      "tag": 3,
+      "patterns": [
+        "Raqamli texnologiyalar vazirligi nima ish bilan shug'ullanadi ?",
+        "Raqamli texnologiyalar vazirligi nima bilan shug'ullanadi ?",
+        "Raqamli texnologiyalar vazirligi nima bilan shug'ullanadilar ?",
+        "men raqamli texnologiyalar vazirligi nima bilan shug'ullanishini bilmoqchiman",
+        "men raqamli texnologiyalar vazirligi nima bilan shug'ullanishini bilmoqchiman"
+      ],
+      "responses": [
+        "Telekommunikatsiya infratuzilmasini yanada rivojlantirish va modernizatsiya qilish, shu jumladan, Internet tarmog‘iga keng polosali ulanishni kengaytirish, telefon aloqasi, televideniye va radioeshittirishning raqamli tizimlariga to‘liq o‘tishni ta’minlash, aloqa va telekommunikatsiyalar sohasidagi faoliyatni, shuningdek, radiochastotali spektrdan foydalanishni davlat yo‘li bilan boshqarish, litsenziyalash va nazorat qilish borasidagi funksiyalarni amalga oshirish.",
+        "Elektron hukumatni tatbiq etish, vazirliklar, idoralar, kompaniyalar va uyushmalarning, mahalliy davlat hokimiyati organlarining axborotlashtirish va interaktiv davlat xizmatlarini takomillashtirish borasidagi faoliyatini idoralararo muvofiqlashtirish, monitoring qilish, baholash va nazorat qilish bo‘yicha davlat dasturlarining amalga oshirilishini ta’minlash, shuningdek, davlat axborot resurslari hamda ma’lumot bazalarini shakllantirish, saqlash va foydalanishning yagona tizimini vujudga keltirish, idoralararo axborot tizimlarini yaratish va boshqarish.",
+        "Internet tarmog‘ining milliy segmenti yanada shakllantirilishini ta’minlash, mamlakatimizning turli yo‘nalishlardagi zamonaviy veb-resurslarini, shu jumladan, aholining, xususan, yosh avlodning axborotga bo‘lgan va intellektual talab-ehtiyojlarini qondirish maqsadida tarmoq resurslarini rivojlantirish uchun zarur texnik va qulay shart-sharoitlarni yaratish."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": 4,
+      "patterns": [
+        "Raqamli texnologiyalar vazirligi asosiy vazifalari ?",
+        "Raqamli texnologiyalar vazirligi vazifalari ?",
+        "Raqamli texnologiyalar vazirligi asosiy vazifasi ?",
+        "Raqamli texnologiyalar vazirligi vazifasi ?"
+      ],
+      "responses": [
+        "Axborot xavfsizligini ta’minlash va kommunikatsiya tarmoqlari, dasturiy mahsulotlar, axborot tizimlari va resurslarini himoya qilishning zamonaviy texnologiyalarini tatbiq etish chora-tadbirlarini amalga oshirish, axborot resurslarini himoya qilish bo‘yicha texnik infratuzilmani yanada rivojlantirish.",
+        "Raqobatdosh dasturiy mahsulotlarning mamlakatimizda ishlab chiqarilishini va ichki bozorini hamda ularga ko‘rsatiladigan xizmatlarni rivojlantirishga ko‘maklashish va uning muvofiqlashtirilishini ta’minlash, iqtisodiyotning real sektori tarmoqlarida va iste’molchilarda zamonaviy dasturiy mahsulotlar, axborot tizimlari va axborot resurslarini joriy etish."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": 5,
+      "patterns": [
+        "Raqamli texnologiyalar vazirligi asosiy yo'nalishlari ?",
+        "Raqamli texnologiyalar vazirligi yo'nalishlari ?",
+        "Raqamli texnologiyalar vazirligi asosiy yo'nalishi ?",
+        "Raqamli texnologiyalar vazirligining asosiy yo'nalishlari qaysilar ?",
+        "Raqamli texnologiyalar vazirligi yo'nalishi ?",
 
-                "maydiy ?",
-                "maydiy haqida aytib ber ?",
-                "maydiy haqida ?",
-                "maydiy bu ?",
-                "maydiy bu nima ?",
-                "maydiy to'g'risida nimani bilasan ?",
-                "maydiy to'g'risida ?",
-                "maydiy to'g'risida aytib ber ?",
+        "vazirligining raqamli qaysilar yo'nalishlari raqamli asosiy ?",
+        "texnologiyalar asosiy raqamli yo'nalishlari vazirligi ?"
+      ],
+      "responses": [
+        "Zamonaviy kommunikatsiya vositalari sohasida ilmiy tadqiqotlar va ishlanmalarni, kadrlarni tayyorlash, qayta tayyorlash va malakasini oshirishni tashkil qilish, dasturiy mahsulotlar, axborot tizimlari va ma’lumotlar bazalarini ishlab chiqish va tatbiq etish, axborot xavfsizligini ta’minlash va axborot-kommunikatsiya texnologiyalarining boshqa sohalarida shunday ishlarni tashkil etish.",
+        "Aloqa, axborot texnologiyalari va kommunikatsiyalar sohasida xalqaro hamkorlikni yo‘lga qo‘yish, ustuvor loyihalarni amalga oshirish, radiochastotalik spektrdan samarali foydalanish uchun hamda vazirlik faoliyati doirasiga kiruvchi boshqa yo‘nalishlar bo‘yicha xorijiy investitsiyalarni jalb etish."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": 6,
+      "patterns": [
+        "O'zbekiston haqida aytib ber ?",
+        "O'zbekiston haqida ?",
+        "O'zbekiston bu ?",
+        "O'zbekiston to'g'risida ?",
+        "O'zbekiston to'g'risida aytib ber ?",
+        "O'zbekiston ?",
+        "O'zbekiston to'g'risida nimani bilasan ?",
+        "Men O'zbekiston haqida bilmoqchiman",
+        "Men O'zbekiston haqida ma'lumot olmoqchi edim",
+        "Man O'zbekiston haqida ma'lumot olmoqchiman",
+        "manga O'zbekiston haqida nima bilishingni aytib ber",
+        "menga O'zbekiston bo'yicha nima bilingni aytsang"
+      ],
+      "responses": "Oʻzbekiston Markaziy Osiyodagi davlat boʻlib, boshqa beshta davlat oʻrtasida joylashgan: shimolda Qozogʻiston, janubda Turkmaniston, sharqda Tojikiston, shimoli-sharqda Qirgʻiziston va janubda Afgʻoniston. Oʻzbekiston poytaxti — Toshkent shahri.",
+      "context_set": ""
+    },
+    {
+      "tag": 7,
+      "patterns": [
+        "Sun'iy intellekt ?",
+        "Sun'iy intellekt to'g'risida nimani bilasan ?",
+        "Sun'iy intellekt to'g'risida aytib ber ?",
+        "Sun'iy intellekt bu nima ?",
+        "Menga sun'i intellekt haqida gapirib ber",
+        "manga sun'i intellekt haqida gapirib ber",
+        "aytib ber menga sun'iy intellekt haqida",
+        "Sun'iy intellekt haqida ?",
 
-                "mayayti ?",
-                "mayayti haqida aytib ber ?",
-                "mayayti haqida ?",
-                "mayayti bu ?",
-                "mayayti bu nima ?",
-                "mayayti to'g'risida nimani bilasan ?",
-                "mayayti to'g'risida ?",
-                "mayayti to'g'risida aytib ber ?",
+        "ber sun'iy aytib intellekt haqida",
+        "intellekt bilasan nimani haqida sun'iy ?"
+      ],
+      "responses": "Sun'iy intellekt - bu kompyuter fanining bo'limi bo'lib, u odatda inson aqlini talab qiladigan vazifalarni bajarishga qodir dastur va tizimlarni yaratish bilan shug'ullanadi. Sun'iy intellekt o'ylashi, o'rganishi, qaror qabul qilishi va odamlar bajaradigan vazifalarga o'xshash vazifalarni bajarishi mumkin bo'lgan kompyuter tizimlarini yaratishga intiladi.",
+      "context_set": ""
+    },
+    {
+      "tag": 8,
+      "patterns": [
+        "Ma'yayti",
+        "mayayti",
+        "mayayiti",
+        "maydiy",
+        "mayaydi",
+        "mayaichi",
+        "may ay di",
+        "MyID ?",
+        "MyID haqida aytib ber ?",
+        "MyID haqida ?",
+        "MyID bu ?",
+        "MyID bu nima ?",
+        "MyID to'g'risida nimani bilasan ?",
+        "MyID to'g'risida ?",
+        "MyID to'g'risida aytib ber ?",
+        "maydiy ?",
+        "maydiy haqida aytib ber ?",
+        "may ay di haqida aytib ber ?",
+        "maydiy haqida ?",
+        "maydiy bu ?",
+        "maydiy bu nima ?",
+        "maydiy to'g'risida nimani bilasan ?",
+        "maydiy to'g'risida ?",
+        "maydiy to'g'risida aytib ber ?",
+        "mayayti ?",
+        "mayayti haqida aytib ber ?",
+        "mayayti haqida ?",
+        "mayayti bu ?",
+        "mayayti bu nima ?",
+        "mayayti to'g'risida nimani bilasan ?",
+        "mayayti to'g'risida ?",
+        "mayayti to'g'risida aytib ber ?",
+        "mayaydi ?",
+        "mayaydi haqida aytib ber ?",
+        "mayaydi haqida ?",
+        "mayaydi bu ?",
+        "mayaydi bu nima ?",
+        "mayaydi to'g'risida nimani bilasan ?",
+        "mayaydi to'g'risida ?",
+        "aytib ber may ay di haqida",
+        "nimalarni bilasan may ay di haqida ?",
+        "mayaydi to'g'risida aytib ber ?"
+      ],
+      "responses": "MyID yuzning unikal biometrik parametrlariga asoslangan jismoniy shaxslarning haqiqiy identifikatsiyasi va autentifikatsiyasini ta'minlab, ularga masofadan turib yoki bevosita ishtiroki bilan bank va boshqa xizmatlardan vakolatli tarzda foydalanish imkoniyatini taqdim etadi.",
+      "context_set": ""
+    },
+    {
+      "tag": 9,
+      "patterns": [
+        "Uzinfocom ?",
+        "Uzinfocom",
+        "uzun fakon",
+        "U zunfa kon",
+        "u zunfa kon",
+        "O'zinfokom",
+        "O'z infi kon",
+        "uzun fakon to'g'risida aytib ber ?",
+        "uzun fakon to'g'risida ?",
+        "uzun fakon to'g'risida nimani bilasan ?",
+        "uzun fakon bu nima ?",
+        "uzun fakon bu ?",
+        "uzun fakon haqida ?",
+        "uzun fakon haqida aytib ber ?",
+        "Uzinfocom to'g'risida aytib ber ?",
+        "Uzinfocom to'g'risida ?",
+        "Uzinfocom to'g'risida nimani bilasan ?",
+        "Uzinfocom bu nima ?",
+        "Uzinfocom bu ?",
+        "Uzinfocom haqida ?",
+        "Uzinfocom haqida aytib ber ?",
+        "U zunfa kon to'g'risida aytib ber ?",
+        "U zunfa kon to'g'risida ?",
+        "U zunfa kon to'g'risida nimani bilasan ?",
+        "U zunfa kon bu nima ?",
+        "U zunfa kon bu ?",
+        "U zunfa kon haqida ?",
+        "U zunfa kon haqida aytib ber ?",
+        "u zunfa kon to'g'risida aytib ber ?",
+        "u zunfa kon to'g'risida ?",
+        "u zunfa kon to'g'risida nimani bilasan ?",
+        "u zunfa kon bu nima ?",
+        "u zunfa kon bu ?",
+        "u zunfa kon haqida ?",
+        "u zunfa kon haqida aytib ber ?"
+      ],
+      "responses": [
+        "Raqamlashtirishning eng muhim asosiy jihatlaridan biri ma’lumotlarni qayta ishlash, boshqarish va saqlash uchun kuchli bazani yaratishdir. Shu maqsadda Yagona integrator UZINFOCOM tuzildi, uning vazifalariga davlat axborot tizimlarini yaratish va qo‘llab-quvvatlash kiradi. Bugungi kunda UZINFOCOM zamonaviy texnologiyalar va yechimlardan foydalangan holda davlat va xususiy sektorni raqamlashtirish bo‘yicha keng ko‘lamli loyihalarni amalga oshiruvchi AKT sohasining asosiy korxonasi hisoblanadi.",
+        "UZINFOCOM zamonaviy texnologiyalar va yechimlardan foydalangan holda davlat va xususiy sektorni raqamlashtirish bo‘yicha keng ko‘lamli loyihalarni amalga oshiruvchi AKT sohasining asosiy korxonasi hisoblanadi."
+      ],
+      "context_set": ""
+    },
 
-                "mayaydi ?",
-                "mayaydi haqida aytib ber ?",
-                "mayaydi haqida ?",
-                "mayaydi bu ?",
-                "mayaydi bu nima ?",
-                "mayaydi to'g'risida nimani bilasan ?",
-                "mayaydi to'g'risida ?",
-                "mayaydi to'g'risida aytib ber ?"
-            ],
-            "responses": "MyID yuzning unikal biometrik parametrlariga asoslangan jismoniy shaxslarning haqiqiy identifikatsiyasi va autentifikatsiyasini ta'minlab, ularga masofadan turib yoki bevosita ishtiroki bilan bank va boshqa xizmatlardan vakolatli tarzda foydalanish imkoniyatini taqdim etadi.",
-            "context_set": ""
-        },
-        {
-            "tag": 57,
-            "patterns": [
-                "uzun fakon to'g'risida aytib ber ?",
-                "uzun fakon to'g'risida ?",
-                "uzun fakon to'g'risida nimani bilasan ?",
-                "uzun fakon bu nima ?",
-                "uzun fakon bu ?",
-                "uzun fakon haqida ?",
-                "uzun fakon haqida aytib ber ?",
-                
-                "Uzinfocom to'g'risida aytib ber ?",
-                "Uzinfocom to'g'risida ?",
-                "Uzinfocom to'g'risida nimani bilasan ?",
-                "Uzinfocom bu nima ?",
-                "Uzinfocom bu ?",
-                "Uzinfocom haqida ?",
-                "Uzinfocom haqida aytib ber ?",
+    {
+      "tag": 10,
+      "patterns": [
+        "O'zbekiston qachon mustaqillikka erishdi ?",
+        "O'zbekiston qachon mustaqil bo'lgan ?",
+        "O'zbekiston mustaqillikka erishgan yil",
+        "O'zbekiston mustaqil bo'lgan yilni ayt",
+        "qachon O'zbekiston mustaqillika erishgan ?",
 
-                "U zunfa kon to'g'risida aytib ber ?",
-                "U zunfa kon to'g'risida ?",
-                "U zunfa kon to'g'risida nimani bilasan ?",
-                "U zunfa kon bu nima ?",
-                "U zunfa kon bu ?",
-                "U zunfa kon haqida ?",
-                "U zunfa kon haqida aytib ber ?",
+        "mustaqillikka erishgan qachon O'zbekiston ?",
+        "qachon mustaqillika erishdi O'zbekiston ?"
+      ],
+      "responses": "O‘zbekiston 1991-yilda Sovet Ittifoqi parchalanganidan keyin mustaqil respublika bo‘ldi.",
+      "context_set": ""
+    },
+    {
+      "tag": 11,
+      "patterns": [
+        "ICT WEEK bo'yicha nimani bilasan?",
+        "ICT WEEK to'g'risida aytib ber",
+        "ICT WEEK bu",
+        "ICT WEEK to'g'risida gapirib ber",
+        "ICT WEEK nima?",
+        "ICT WEEK tog’risida nimalarni bilasan?",
+        "Aysichivik bo'yicha nimani bilasan?",
+        "Aysichivik to'g'risida aytib ber",
+        "Aysichivik bu",
+        "Aysichivik to'g'risida gapirib ber",
+        "Aysichivik nima?",
+        "Aysichivik tog’risida nimalarni bilasan?",
+        "aysichivik bo'yicha nimani bilasan?",
+        "aysichivik to'g'risida aytib ber",
+        "aysichivik bu",
+        "aysichivik to'g'risida gapirib ber",
+        "aysichivik nima?",
+        "aysichivik tog’risida nimalarni bilasan?",
+        "aysitivik bo'yicha nimani bilasan?",
+        "aysitivik to'g'risida aytib ber",
+        "aysitivik bu",
+        "aysitivik to'g'risida gapirib ber",
+        "aysitivik nima?",
+        "aysitivik tog’risida nimalarni bilasan?",
+        "aysittivik bo'yicha nimani bilasan?",
+        "aysittivik to'g'risida aytib ber",
+        "aysittivik bu",
+        "aysittivik to'g'risida gapirib ber",
+        "aysittivik nima?",
+        "aysittivik tog’risida nimalarni bilasan?",
+        "asicivik bo'yicha nimani bilasan?",
+        "asicivik to'g'risida aytib ber",
+        "asicivik bu",
+        "asicivik to'g'risida gapirib ber",
+        "asicivik nima?",
+        "asicivik tog’risida nimalarni bilasan?",
+        "ayshitchivik bo'yicha nimani bilasan?",
+        "ayshitchivik to'g'risida aytib ber",
+        "ayshitchivik bu",
+        "ayshitchivik to'g'risida gapirib ber",
+        "ayshitchivik nima?",
+        "ayshitchivik to'g’risida nimalarni bilasan?",
 
-                "u zunfa kon to'g'risida aytib ber ?",
-                "u zunfa kon to'g'risida ?",
-                "u zunfa kon to'g'risida nimani bilasan ?",
-                "u zunfa kon bu nima ?",
-                "u zunfa kon bu ?",
-                "u zunfa kon haqida ?",
-                "u zunfa kon haqida aytib ber ?"
+        "to'g'risida aysitivik bilasan nimalarni ?",
+        "bo'yicha bilasan aysichivik haqida ?"
+      ],
+      "responses": "“ICT WEEK Uzbekistan” 2004-yildan buyon har yili o'tkazib kelinayotgan eng muhim tadbirlardan biri hisoblanadi.  Axborot texnologiyalari haftaligi an’anaviy tarzda bir qator ixtisoslashtirilgan tadbirlarni yagona formatda birlashtiradi.  Texnologiyalar haftaligining asosiy vazifasi tajriba almashish, zamonaviy texnologiyalar va innovatsion yutuqlarni namoyish etish uchun platforma yaratishdan iborat.  Bundan tashqari, bu O‘zbekiston IT bozorining xorijiy investorlar uchun jozibadorligini, davlat, kompaniyalar va iste’molchilar o‘rtasidagi o‘zaro munosabatlarni yo'lga qo'yish uchun ideal maydondir.",
+      "context_set": ""
+    },
+    {
+      "tag": 12,
+      "patterns": [
+        "kimsan?",
+        "o'zini tanishtir",
+        "o'zingni mehmonlarga tanishtir",
+        "o'zingni tanishtir",
+        "o'zingni hammaga tanishtir",
+        "hammaga o'zingni tanishtirsang",
+        "o’zingni mehmonlarga tanishtirsang",
 
-            ],
-            "responses": "Raqamlashtirishning eng muhim asosiy jihatlaridan biri ma’lumotlarni qayta ishlash, boshqarish va saqlash uchun kuchli bazani yaratishdir. Shu maqsadda Yagona integrator UZINFOCOM tuzildi, uning vazifalariga davlat axborot tizimlarini yaratish va qo‘llab-quvvatlash kiradi. Bugungi kunda UZINFOCOM zamonaviy texnologiyalar va yechimlardan foydalangan holda davlat va xususiy sektorni raqamlashtirish bo‘yicha keng ko‘lamli loyihalarni amalga oshiruvchi AKT sohasining asosiy korxonasi hisoblanadi.",
-            "context_set": ""
-        },
-        {
-            "tag": 64,
-            "patterns": [
-                "Seni kim yaratdi ?",
-                "Seni kim yaratgan ?"
-            ],
-            "responses": "Meni davlat axborot tizimlarini yaratish va qo'llab-quvvatlash bo'yicha yagona integrator Uzinfocom yaratgan",
-            "context_set": ""
-        },
-        {
-            "tag": 67,
-            "patterns": [
-                "Sun'iy intellekt haqida ?"
-            ],
-            "responses": "Sun'iy intellekt - bu kompyuter fanining bo'limi bo'lib, u odatda inson aqlini talab qiladigan vazifalarni bajarishga qodir bo'lgan dasturlar va tizimlarni yaratish bilan shug'ullanadi. Sun'iy intellekt o'ylash, o'rganish, qaror qabul qilish va odamlar bajaradigan vazifalarga o'xshash vazifalarni bajarishga qodir kompyuter tizimlarini yaratishga intiladi.",
-            "context_set": ""
-        },
-        {
-            "tag": 68,
-            "patterns": [
-                "O'zbekiston qachon mustaqillikka erishdi ?",
-                "O'zbekiston qachon mustaqil bo'lgan ?"
-            ],
-            "responses": "O‘zbekiston 1991-yilda Sovet Ittifoqi parchalanganidan keyin mustaqil respublika bo‘ldi.",
-            "context_set": ""
-        },
-        {
-            "tag": 71,
-            "patterns": [
-                "ICT WEEK to'g'risida ?",
-                "ICT WEEK bu nima ?",
+        "tanishtirsang mehmonlarga o'zingni",
+        "tanishtirsang o'zingni hammaga"
+      ],
+      "responses": "Hurmatli mehmonlar,  Mening ismim Muxlisa. Men sun'iy intellekt negizida yaratilgan o’zbek tilidagi ovozli yordamchiman. Bugun sizlarga ICT WEEK to’g’risida kerakli ma’lumotlarni berishim mumkin. Sizni nimalar qiziqtirmoqda?",
+      "context_set": ""
+    },
+    {
+      "tag": 13,
+      "patterns": [
+        "biz bilanmisan?",
+        "shettamisan?",
+        "shu yerdamisan?",
+        "salom",
+        "Salom",
+        "SALOM",
+        "assalomu alaykum"
+      ],
+      "responses": "Salom, sizga nima yordam bera olaman?",
+      "context_set": ""
+    },
+    {
+      "tag": 14,
+      "patterns": [
+        "Isming kim ?",
+        "isming kim ?",
+        "isming nima ?",
+        "nima isming ?",
+        "isming qanday ?",
+        "qanday nomlangansan ?",
+        "seni qanday nomlashgan ?",
+        "sani qanday nomlashgan ?",
+        "seni isming kim ?",
+        "seni isming nima ?",
+        "sani isming nima ?",
+        "sani isming kim ?",
 
-                "aysichi to'g'risida ?",
-                "aysichi bu nima ?",
+        "nomlashgan seni qanday ?",
+        "qanday sani nomlashgan ?",
+        "qanday isming ?",
+        "isming san kim ?"
+      ],
+      "responses": "Mening ismim Muxlisa",
+      "context_set": ""
+    },
+    {
+      "tag": 15,
+      "patterns": [
+        "Muxlisa sen kimsan ?",
+        "Muxlisa san kimsan ?",
+        "muxlisa sening qanday imkoniyatlaring bor ?",
+        "Muxlisa qanday imkoniyatlaring bor ?",
+        "Muxlisa imkoniyatlaring haqida gapir",
+        "Muxlisa imkoniyatlaring haqida gapirib ber",
+        "Sening qanday imkoniyatlaring bor ?",
+        "qanday imkoniyatlaring bor ?",
+        "imkoniyatlaring haqida gaprib ber",
+        "Sen kimsan Muxlisa ?",
 
-                "Qaysitsi to'g'risida ?",
-                "Qaysitsi bu nima ?",
+        "imkoniyatkaring Muxlisa ber haqida gapirib",
+        "sen Muxlisa kimsan ?",
+        "gapirib haqida imkoniyatlaring ber"
+      ],
+      "responses": "Men, o'zbek tilidagi nutqni va matnlarni sun’iy intellekt yordamida qayta ishlash va o'zbek tilida muloqot qiladigan aqlli yordamchi",
+      "context_set": ""
+    },
+    {
+      "tag": 16,
+      "patterns": [
+        "tashakkur",
+        "rahmat Muxlisa",
+        "raxmat",
+        "rahmat",
+        "raxnat Muxlisa",
+        "minnatdorman"
+      ],
+      "responses": "agar yana qandaydir yordam kerak bo’lsa men shu yerda bo’laman, mehmonlarni choyiga qarab turaman",
+      "context_set": ""
+    },
+    {
+      "tag": 17,
+      "patterns": [
+        "Yaxshi, endi taqdimotimni yoqib ber",
+        "taqdimotni yoqvor",
+        "taqdimotni yoqib yubor",
+        "Muxlisa, endi taqdimotni yoqib ber",
+        "Yaxshi, endi taqdimotni yoqib ber",
+        "Muxlisa taqdimotimni yoqib ber",
+        "yoqib ber Muxlisa taqdimotimni",
+        "taqdimotni Muxlisa ber yoqib"
+      ],
+      "responses": "Tushunarli, hozir yoqaman",
+      "context_set": ""
+    },
+    {
+      "tag": 18,
+      "patterns": [
+        "Seni kim yaratdi ?",
+        "sani kim yaratdi",
+        "Seni kim yaratgan ?",
+        "sani kim yaratgan",
+        "Kim tomonidan yaratilgansan ?",
+        "san kim tomonidan yaratilgansan ?",
+        "Sen kim tomonidan yaratilgansan ?",
+        "seni kim ixtiro qilgan ?",
+        "sani kim ixtiro qilgan ?",
 
-                "aysici to'g'risida ?",
-                "aysici bu nima ?",
+        "seni qaysi kompaniya ishlab chiqargan ?",
+        "seni qaysi kompaniya ixtiro qilgan ?",
+        "seni qaysi kompaniya yaratdi ?",
+        "seni qaysi kompaniya yaratgan ?",
+        "sani qaysi kompaniya yaratgan",
+        "sani yaratgan kompaniyani ayt",
+        "qaysi kompaniya tomonidan yaratilgansan ?",
+        "qaysi kompaniya tomonidan ishlab chiqilgansan",
+        "kompaniya qaysi yaratilgan tomonidan ?",
+        "ixtiro qilgan seni kompaniya qaysi",
 
-                "asichi to'g'risida ?",
-                "asichi bu nima ?",
+        "sani qaysi tashkilot yaratgan ?",
+        "qaysi tashkilot tomonidan yaratilgansan ?",
+        "tashkilot yaratgan qaysi seni ?",
+        "yaratdi tashkilot seni ?",
+        "seni qaysi tashkilot ishlab chiqargan ?",
+        "sani ishlab chiqargan tashkilot qaysi ?",
+        "qaysi tashkilot tomonidan ishlab chiqilgansan ?"
+      ],
+      "responses": "Meni davlat axborot tizimlarini yaratish va qo'llab-quvvatlash bo'yicha yagona integrator Uzinfocom yaratgan",
+      "context_set": ""
+    },
+    {
+      "tag": 19,
+      "patterns": [
+        "ICT WEEK asosiy vazifasi ?",
+        "asicivik asosiy vazifasi ?",
+        "vazifasi asosiy ICT WEEK ",
+        "aysichivik asosiy vazifasi",
+        "asosiy vazifasi aysitivik",
+        "aysitivik asosiy vazifasi",
+        "aysitivik vazifalari",
+        "asicivik vazifalari",
+        "aysichivik vazifalari",
+        "ICT WEEK vazifalari ?",
+        "vazifasi ICT WEEK",
+        "vazifasi aysitivik",
+        "aysitivik vazifasi",
+        "asicivik vazifasi",
+        "ICT WEEK vazifasi ?",
+        "aysichivik vazifasi"
+      ],
+      "responses": "ICT WEEK ning asosiy vazifasi tajriba almashish va zamonaviy texnologiyalar hamda innovatsiyalar yutuqlarini namoyish etish sanaladi. Shuningdek, bu O‘zbekiston IT - bozorining jozibadorligini xorijiy investorlarga namoyish etish, davlat, kompaniyalar va isteʼmolchilar o‘zaro hamkorligi uchun ideal maydonchadir"
+    },
+    {
+      "tag": 20,
+      "patterns": [
+        "ICT WEEK asosiy maqsad ?",
+        "asicivik asosiy maqsad ?",
+        "aysichivik asosiy maqsad",
+        "aysitivik asosiy maqsad",
+        "ICT WEEK maqsad ?",
+        "aysitivik maqsad",
+        "asicivik maqsad",
+        "aysichivik maqsad",
+        "maqsad aysichivik",
+        "maqsadi aysitivik",
 
-                "aysichi to'g'risida ?",
-                "aysichi bu nima ?",
+        "ICT WEEK asosiy maqsadi ?",
+        "asicivik asosiy maqsadi ?",
+        "aysichivik asosiy maqsadi",
+        "aysitivik asosiy maqsadi",
+        "ICT WEEK maqsadi ?",
+        "aysitivik maqsadi",
+        "asicivik maqsadi",
+        "aysichivik maqsadi"
 
-                
-                "Aysichivik to'g'risida ?",
-                "Aysichivik bu nima ?",
-
-                "aysichivik to'g'risida ?",
-                "aysichivik bu nima ?",
-
-                "aysitivik to'g'risida ?",
-                "aysitivik bu nima ?",
-
-                "aysittivik to'g'risida ?",
-                "aysittivik bu nima ?",
-
-                "asicivik to'g'risida ?",
-                "asicivik bu nima ?",
-
-                "aitsvik to'g'risida ?",
-                "aitsvik bu nima ?",
-
-                "ayshitchivik to'g'risida ?",
-                "ayshitchivik bu nima ?",
-
-                "asitsiligi to'g'risida ?",
-                "asitsiligi bu nima ?",
-
-                "aysichivik to'g'risida ?",
-                "aysichivik bu nima ?"               
-
-            ],
-            "responses": "“ICT WEEK Uzbekistan” 2004-yildan buyon har yili o'tkazib kelinayotgan eng muhim tadbirlardan biri hisoblanadi. Axborot texnologiyalari haftaligi an’anaviy tarzda bir qator ixtisoslashtirilgan tadbirlarni yagona formatda birlashtiradi. Texnologiyalar haftaligining asosiy vazifasi tajriba almashish, zamonaviy texnologiyalar va innovatsion yutuqlarni namoyish etish uchun platforma yaratishdan iborat. Bundan tashqari, bu O‘zbekiston IT bozorining xorijiy investorlar uchun jozibadorligini, davlat, kompaniyalar va iste’molchilar o‘rtasidagi o‘zaro munosabatlarni yo'lga qo'yish uchun ideal maydondir.",
-            "context_set": ""
-        },
-        {
-            "tag": 72,
-            "patterns": [
-                "Muxlisa sen kimsan ?"
-            ],
-            "responses": "O'zbek tilidagi nutqni va matnlarni sun’iy intellekt yordamida qayta ishlash va o'zbek tilida muloqot qiladigan aqlli yordamchi",
-            "context_set": ""
-        },
-        {
-            "tag": 74,
-            "patterns": [
-                "tashakkur",
-                "rahmat Muxlisa",
-                "raxmat",
-                "rahmat"
-            ],
-            "responses": "agar yana qandaydir yordam kerak bo’lsa men shu yerda bo’laman, mehmonlarni choyiga qarab turaman",
-            "context_set": ""
-        },
-        {
-            "tag": 78,
-            "patterns": [
-                "Yaxshi, endi taqdimotimni yoqib ber"
-            ],
-            "responses": "Tushunarli, hozir yoqaman",
-            "context_set": ""
-        },
-        {
-            "tag": 79,
-            "patterns": [
-                "ICT WEEK bo'yicha nimani bilasan?",
-                "ICT WEEK to'g'risida aytib ber",
-                "ICT WEEK bu",
-                "ICT WEEK to'g'risida gapirib ber",
-                "ICT WEEK nima?",
-                "ICT WEEK tog’risida nimalarni bilasan?",
-
-                "Aysichivik bo'yicha nimani bilasan?",
-                "Aysichivik to'g'risida aytib ber",
-                "Aysichivik bu",
-                "Aysichivik to'g'risida gapirib ber",
-                "Aysichivik nima?",
-                "Aysichivik tog’risida nimalarni bilasan?",
-
-                "aysichivik bo'yicha nimani bilasan?",
-                "aysichivik to'g'risida aytib ber",
-                "aysichivik bu",
-                "aysichivik to'g'risida gapirib ber",
-                "aysichivik nima?",
-                "aysichivik tog’risida nimalarni bilasan?",
-
-                "aysitivik bo'yicha nimani bilasan?",
-                "aysitivik to'g'risida aytib ber",
-                "aysitivik bu",
-                "aysitivik to'g'risida gapirib ber",
-                "aysitivik nima?",
-                "aysitivik tog’risida nimalarni bilasan?",
-
-                "aysittivik bo'yicha nimani bilasan?",
-                "aysittivik to'g'risida aytib ber",
-                "aysittivik bu",
-                "aysittivik to'g'risida gapirib ber",
-                "aysittivik nima?",
-                "aysittivik tog’risida nimalarni bilasan?",
-
-                "asicivik bo'yicha nimani bilasan?",
-                "asicivik to'g'risida aytib ber",
-                "asicivik bu",
-                "asicivik to'g'risida gapirib ber",
-                "asicivik nima?",
-                "asicivik tog’risida nimalarni bilasan?",
-
-                "ayshitchivik bo'yicha nimani bilasan?",
-                "ayshitchivik to'g'risida aytib ber",
-                "ayshitchivik bu",
-                "ayshitchivik to'g'risida gapirib ber",
-                "ayshitchivik nima?",
-                "ayshitchivik tog’risida nimalarni bilasan?"
-            ],
-            "responses": "“ICT WEEK Uzbekistan” 2004-yildan buyon har yili o'tkazib kelinayotgan eng muhim tadbirlardan biri hisoblanadi.  Axborot texnologiyalari haftaligi an’anaviy tarzda bir qator ixtisoslashtirilgan tadbirlarni yagona formatda birlashtiradi.  Texnologiyalar haftaligining asosiy vazifasi tajriba almashish, zamonaviy texnologiyalar va innovatsion yutuqlarni namoyish etish uchun platforma yaratishdan iborat.  Bundan tashqari, bu O‘zbekiston IT bozorining xorijiy investorlar uchun jozibadorligini, davlat, kompaniyalar va iste’molchilar o‘rtasidagi o‘zaro munosabatlarni yo'lga qo'yish uchun ideal maydondir.",
-            "context_set": ""
-        },
-        {
-            "tag": 85,
-            "patterns": [
-                "kimsan?"
-            ],
-            "responses": "Hurmatli mehmonlar,  Mening ismim Muxlisa. Men suníy intellekt negizida yaratilgan o’zbek tilidagi ovozli yordamchiman. Bugun sizlarga ICT WEEK to’g’risida kerakli ma’lumotlarni berishim mumkin. Sizni nimalar qiziqtirmoqda?",
-            "context_set": ""
-        },
-        {
-            "tag": 86,
-            "patterns": [
-                "o'zini tanishtir",
-                "o'zingni mehmonlarga tanishtir",
-                "o'zingni tanishtir"
-            ],
-            "responses": "Hurmatli mehmonlar,  Mening ismim Muxlisa. Men sun'iy intellekt negizida yaratilgan o’zbek tilidagi ovozli yordamchiman. Bugun sizlarga ICT WEEK to’g’risida kerakli ma’lumotlarni berishim mumkin. Sizni nimalar qiziqtirmoqda?",
-            "context_set": ""
-        },
-        {
-            "tag": 89,
-            "patterns": [
-                "o’zingni mehmonlarga tanishtirsang"
-            ],
-            "responses": "Hurmatli mehmonlar,  Mening ismim Muxlisa. Men suníy intellekt negizida yaratilgan o’zbek tilidagi ovozli yordamchiman. Bugun sızlarga ICT WEEK to’g’risida kerakli ma’lumotlarni berishim mumkin. Sizin nimalar qiziqtirmoqda?",
-            "context_set": ""
-        },
-        {
-            "tag": 90,
-            "patterns": [
-                "biz bilanmisan?",
-                "shettamisan?",
-                "shu yerdamisan?",
-                "salom"
-            ],
-            "responses": "Salom, sizga nima yordam bera olaman?",
-            "context_set": ""
-        },
-        {
-            "tag": 94,
-            "patterns": [
-                "Isming kim?"
-            ],
-            "responses": "Mening ismim Muxlisa",
-            "context_set": ""
-        }
-    ]
+      ],
+      "responses": "ICT WEEK ning asosiy vazifasi tajriba almashish va zamonaviy texnologiyalar hamda innovatsiyalar yutuqlarini namoyish etish sanaladi. Shuningdek, bu O‘zbekiston IT - bozorining jozibadorligini xorijiy investorlarga namoyish etish, davlat, kompaniyalar va isteʼmolchilar o‘zaro hamkorligi uchun ideal maydonchadir"
+    }
+  ]
 }
