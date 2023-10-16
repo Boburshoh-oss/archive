@@ -212,6 +212,8 @@
     {
       "tag": 10,
       "patterns": [
+        "O‘zbekiston",
+        "O'zbekiston",
         "O'zbekiston qachon mustaqillikka erishdi ?",
         "O'zbekiston qachon mustaqil bo'lgan ?",
         "O'zbekiston mustaqillikka erishgan yil",
@@ -233,12 +235,12 @@
         "ICT WEEK to'g'risida gapirib ber",
         "ICT WEEK nima?",
         "ICT WEEK tog’risida nimalarni bilasan?",
-        "Aysichivik bo'yicha nimani bilasan?",
-        "Aysichivik to'g'risida aytib ber",
-        "Aysichivik bu",
-        "Aysichivik to'g'risida gapirib ber",
-        "Aysichivik nima?",
-        "Aysichivik tog’risida nimalarni bilasan?",
+        "aysichivik bo'yicha nimani bilasan?",
+        "aysichivik to'g'risida aytib ber",
+        "aysichivik bu",
+        "aysichivik to'g'risida gapirib ber",
+        "aysichivik nima?",
+        "aysichivik tog’risida nimalarni bilasan?",
         "aysichivik bo'yicha nimani bilasan?",
         "aysichivik to'g'risida aytib ber",
         "aysichivik bu",
@@ -266,6 +268,7 @@
         "ayshitchivik bo'yicha nimani bilasan?",
         "ayshitchivik to'g'risida aytib ber",
         "ayshitchivik bu",
+
         "ayshitchivik to'g'risida gapirib ber",
         "ayshitchivik nima?",
         "ayshitchivik to'g’risida nimalarni bilasan?",
@@ -302,7 +305,13 @@
         "salom",
         "Salom",
         "SALOM",
-        "assalomu alaykum"
+        "assalomu alaykum",
+        "muxlisa",
+        "Muxlisa",
+        "MUXLISA",
+        "salom muxlisa",
+        "salom Muxlisa",
+        "salom, muxlisa"
       ],
       "responses": "Salom, sizga nima yordam bera olaman?",
       "context_set": ""
