@@ -3,14 +3,12 @@ import json
 import telebot
 import pickle
 import numpy as np
-from telebot import types
+from fuzzywuzzy import process, fuzz
 import requests
-from tensorflow import keras
 
-bot = telebot.TeleBot("6133521715:AAHy9pq179oFYuPg2izr-ky2ig5xDu30pbM")
+bot = telebot.TeleBot("6266290171:AAEFG6zA2vflDd961bc-YEFFpclUf9gUHQI")
 
-model = keras.models.load_model('content/chat_model')
-with open("intents_v2.json") as file:
+with open("intents_v3_converted_new.json") as file:
     datasss = json.load(file)
 # load tokenizer object
 with open('tokenizer.pickle', 'rb') as handle:
@@ -19,6 +17,17 @@ with open('tokenizer.pickle', 'rb') as handle:
 # load label encoder object
 with open('label_encoder.pickle', 'rb') as enc:
     lbl_encoder = pickle.load(enc)
+
+
+def replace_apostrophes(input_text):
+    text_rep = []
+    for i in input_text:
+        if i == "'":
+            text_rep.extend(i.replace("'", "‘"))
+        else:
+            text_rep.extend(i)
+    text_rep = "".join(text_rep)
+    return text_rep
 
 
 class MuxlisaApi:
@@ -79,23 +88,21 @@ def chat(message):
 
     api = MuxlisaApi(audio=file_name)
     data = api.stt()
-    max_len = 20
+    user_voice_text = data['content']
+    questions = [items for items in datasss]
     fallback_responses = ["Kechirasiz, savolingizni tushunaolmadim.", "Kechirasiz, Savolingizni qaytara olasizmi?"]
-    res = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([data["content"]]),
-                                                                   truncating='post', maxlen=max_len))
-
-    confidence = np.max(res)
     random_response = np.random.choice(fallback_responses)
-    print("o'xshashlik: ", confidence)
-    if confidence < 0.6:  # Threshold ustanish
-        api = MuxlisaApi(text=random_response)
-        response = random_response
+    res = process.extractOne(query=user_voice_text, choices=questions, scorer=fuzz.token_sort_ratio)
+    print(res)
+    if res[1] > 65:
+        res = res[0]
+        random_answer = np.random.choice(datasss[res]['responses'])
+        api = MuxlisaApi(text=random_answer)
+        answer = random_answer
     else:
-        tag = lbl_encoder.inverse_transform([np.argmax(res)])
-        for i in datasss['intents']:
-            if i['tag'] == tag:
-                api = MuxlisaApi(text=i['responses'])
-                response = i['responses']
+        api = MuxlisaApi(text=random_response)
+        answer = random_response
+
     res = api.tts(speaker_id=0)
     audio = res
     file_name = "tts_audio.ogg"
@@ -105,32 +112,26 @@ def chat(message):
         bot.send_voice(
             chat_id=message.chat.id,
             voice=f,
-            caption=f"Savol: {data['content']}\n\nJavob: {response}"
+            caption=f"Savol: {data['content']}\n\nJavob: {answer}"
         )
 
 
 @bot.message_handler(content_types=["text"])
 def chat_text(message):
-    max_len = 20
+    input_message = replace_apostrophes(message.text)
     fallback_responses = ["Kechirasiz, savolingizni tushunaolmadim.", "Kechirasiz, Savolingizni qaytara olasizmi?"]
-    res = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([message.text]),
-                                                                   truncating='post', maxlen=max_len))
-
-    confidence = np.max(res)
+    questions = [items for items in datasss]
+    res = process.extractOne(query=input_message, choices=questions, scorer=fuzz.token_sort_ratio)
+    print(res)
     random_response = np.random.choice(fallback_responses)
-    print("o'xshashlik: ", confidence)
-    if confidence < 0.6:  # Threshold ustanish
+    if res[1] > 65:  # Threshold ustanish
+        res = res[0]
+        random_answer = np.random.choice(datasss[res]['responses'])
+        api = MuxlisaApi(text=random_answer)
+        response = random_answer
+    else:
         api = MuxlisaApi(text=random_response)
         response = random_response
-    else:
-        tag = lbl_encoder.inverse_transform([np.argmax(res)])
-        for i in datasss['intents']:
-            if i['tag'] == tag:
-                print(i["responses"])
-                api = MuxlisaApi(text=i['responses'])
-                response = i['responses']
-                print(f"response>> {response}\n"
-                      f"response type>> {type(response)}")
     res = api.tts(speaker_id=0)
     audio = res
     file_name = "tts_audio.ogg"
