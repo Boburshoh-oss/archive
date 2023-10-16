@@ -1,6 +1,5 @@
 import sounddevice as sd
 from scipy.io.wavfile import write
-import wavio as wv
 import requests
 
 
@@ -10,7 +9,7 @@ def listen():
     freq = 16000
 
     # Recording duration
-    duration = 5
+    duration = 6
 
     # Start recorder with the given values
     # of duration and sample frequency
