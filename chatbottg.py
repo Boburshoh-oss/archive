@@ -1,4 +1,5 @@
 import json
+import time
 
 import telebot
 import pickle
@@ -80,6 +81,10 @@ class MuxlisaApi:
 
 @bot.message_handler(content_types=["voice"])
 def chat(message):
+    ict_week_replacer = [
+        "aysichivik", "aysitivik", "aysittivik", "asicivik", "ayshitchivik", "sitivik", "aysisivik", "aysitvik",
+        "asitivik", "asisivik", "aysichivik"
+    ]
     file_info = bot.get_file(message.voice.file_id)
     downloaded_file = bot.download_file(file_info.file_path)
     file_name = "stt.ogg"
@@ -92,59 +97,94 @@ def chat(message):
     questions = [items for items in datasss]
     fallback_responses = ["Kechirasiz, savolingizni tushunaolmadim.", "Kechirasiz, Savolingizni qaytara olasizmi?"]
     random_response = np.random.choice(fallback_responses)
-    res = process.extractOne(query=user_voice_text, choices=questions, scorer=fuzz.token_sort_ratio)
+    res = process.extractOne(query=user_voice_text.lower(), choices=questions, scorer=fuzz.token_sort_ratio)
     print(res)
-    if res[1] > 65:
+    temp_list = []
+    if res[1] > 60:
         res = res[0]
+        for each_word in user_voice_text.lower().split(" "):
+            if each_word in ict_week_replacer:
+                new_var = each_word.replace(each_word, "ICT WEEK")
+                temp_list.append(new_var)
+            else:
+                temp_list.append(each_word)
         random_answer = np.random.choice(datasss[res]['responses'])
         api = MuxlisaApi(text=random_answer)
         answer = random_answer
     else:
+        for each_word in user_voice_text.lower().split(" "):
+            temp_list.append(each_word)
         api = MuxlisaApi(text=random_response)
         answer = random_response
 
     res = api.tts(speaker_id=0)
     audio = res
     file_name = "tts_audio.ogg"
+    data_content = " ".join(temp_list)
+    print(f"user message: {data_content}")
     with open(file_name, "wb") as f:
         f.write(audio)
     with open(file_name, "rb") as f:
         bot.send_voice(
             chat_id=message.chat.id,
             voice=f,
-            caption=f"Savol: {data['content']}\n\nJavob: {answer}"
+            caption=f"Savol: {data_content}\n\nJavob: {answer}"
         )
 
 
 @bot.message_handler(content_types=["text"])
 def chat_text(message):
+    ict_week_replacer = [
+        "aysichivik", "aysitivik", "aysittivik", "asicivik", "ayshitchivik", "sitivik", "aysisivik", "aysitvik",
+        "asitivik", "asisivik", "aysichivik"
+    ]
     input_message = replace_apostrophes(message.text)
     fallback_responses = ["Kechirasiz, savolingizni tushunaolmadim.", "Kechirasiz, Savolingizni qaytara olasizmi?"]
     questions = [items for items in datasss]
-    res = process.extractOne(query=input_message, choices=questions, scorer=fuzz.token_sort_ratio)
+    res = process.extractOne(query=input_message.lower(), choices=questions, scorer=fuzz.token_sort_ratio)
     print(res)
     random_response = np.random.choice(fallback_responses)
-    if res[1] > 65:  # Threshold ustanish
+    temp_list = []
+    if res[1] > 60:  # Threshold ustanish
         res = res[0]
+        for each_word in input_message.lower().split(" "):
+            if each_word in ict_week_replacer:
+                new_var = each_word.replace(each_word, "ICT WEEK")
+                temp_list.append(new_var)
+            else:
+                temp_list.append(each_word)
         random_answer = np.random.choice(datasss[res]['responses'])
         api = MuxlisaApi(text=random_answer)
         response = random_answer
     else:
+        for each_word in input_message.lower().split(" "):
+                temp_list.append(each_word)
         api = MuxlisaApi(text=random_response)
         response = random_response
     res = api.tts(speaker_id=0)
     audio = res
     file_name = "tts_audio.ogg"
+    data_content = " ".join(temp_list)
+    print(f"user message: {data_content}")
     with open(file_name, "wb") as f:
         f.write(audio)
     with open(file_name, "rb") as f:
         bot.send_voice(
             chat_id=message.chat.id,
             voice=f,
-            caption=f"Savol: {message.text}\n\nJavob: {response}"
+            caption=f"Savol: {data_content}\n\nJavob: {response}"
         )
         # print(bot.message_handler())
 
 
-if __name__ == '__main__':
-    bot.polling()
+if __name__ == "__main__":
+    count = 0
+    while True:
+        count += 1
+        print(count)
+        try:
+            bot.polling(non_stop=True, interval=0)
+        except Exception as e:
+            print(e)
+            time.sleep(5)
+            continue
